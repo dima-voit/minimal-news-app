@@ -1,0 +1,106 @@
+.main {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 4fr 1fr;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+article {
+  padding: 5px;
+  background-color: #fff;
+
+  a {
+    display: flex;
+    gap: 10px;
+    color: #232a31;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.smallNews {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.smallNews .previewNews p,
+.smallNews .titleNews {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section {
+  padding: 5px;
+  background-color: #fff;
+}
+
+.weather {
+  display: flex;
+  gap: 20px;
+}
+
+.weatherItem {
+  text-align: center;
+}
+
+.weatherDay {
+  font-size: 12px;
+}
+
+.weatherIcon img {
+  width: 40px;
+}
+
+.weatherTemp {
+  font-size: 12px;
+  font-weight: 700;
+
+  .day {
+    color: #828643;
+  }
+}
+
+.exchangeTable {
+  width: 100%;
+}
+
+.exchangeTable th {
+  font-size: 12px;
+  color: rgb(81, 81, 81);
+}
+
+.exchangeTable td {
+  width: 60px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.exchangeTable td:first-child {
+  text-align: left;
+}
+
+.exchangeTable tr td {
+  border-bottom: 1px solid #CCCACB;
+}
