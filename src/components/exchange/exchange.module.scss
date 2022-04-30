@@ -1,0 +1,29 @@
+section {
+  padding: 5px;
+  background-color: #fff;
+}
+
+.exchangeTable {
+  width: 100%;
+}
+
+.exchangeTable th {
+  font-size: 12px;
+  color: rgb(81, 81, 81);
+}
+
+.exchangeTable td {
+  width: 60px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.exchangeTable td:first-child {
+  text-align: left;
+}
+
+.exchangeTable tr td {
+  border-bottom: 1px solid #CCCACB;
+}

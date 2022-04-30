@@ -1,0 +1,38 @@
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+article {
+  padding: 5px;
+  background-color: #fff;
+
+  a {
+    display: flex;
+    gap: 10px;
+    color: #232a31;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.smallNews {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.smallNews .previewNews p,
+.smallNews .titleNews {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}

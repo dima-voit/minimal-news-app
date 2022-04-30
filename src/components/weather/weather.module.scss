@@ -1,0 +1,30 @@
+section {
+  padding: 5px;
+  background-color: #fff;
+}
+
+.weather {
+  display: flex;
+  gap: 20px;
+}
+
+.weatherItem {
+  text-align: center;
+}
+
+.weatherDay {
+  font-size: 12px;
+}
+
+.weatherIcon img {
+  width: 40px;
+}
+
+.weatherTemp {
+  font-size: 12px;
+  font-weight: 700;
+
+  .day {
+    color: #828643;
+  }
+}
