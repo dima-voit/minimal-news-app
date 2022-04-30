@@ -9,7 +9,7 @@ export class Main extends React.Component {
         <div className={styles.news}>
           <div className={styles.mainNews}>
             <article>
-              <a href="#">
+              <a href="/#">
                 <div className={styles.imgNews}>
                   <img src="https://via.placeholder.com/405x240" alt="News" />
                 </div>
@@ -26,7 +26,7 @@ export class Main extends React.Component {
           </div>
           <div className={styles.smallNews}>
             <article>
-              <a href="#">
+              <a href="/#">
                 <div className={styles.imgNews}>
                   <img src="https://via.placeholder.com/190x130" alt="News" />
                 </div>
@@ -41,7 +41,7 @@ export class Main extends React.Component {
               </a>
             </article>
             <article>
-              <a href="#">
+              <a href="/#">
                 <div className={styles.imgNews}>
                   <img src="https://via.placeholder.com/190x130" alt="News" />
                 </div>
@@ -56,7 +56,7 @@ export class Main extends React.Component {
               </a>
             </article>
             <article>
-              <a href="#">
+              <a href="/#">
                 <div className={styles.imgNews}>
                   <img src="https://via.placeholder.com/190x130" alt="News" />
                 </div>
@@ -71,7 +71,7 @@ export class Main extends React.Component {
               </a>
             </article>
             <article>
-              <a href="#">
+              <a href="/#">
                 <div className={styles.imgNews}>
                   <img src="https://via.placeholder.com/190x130" alt="News" />
                 </div>
@@ -86,7 +86,7 @@ export class Main extends React.Component {
               </a>
             </article>
             <article>
-              <a href="#">
+              <a href="/#">
                 <div className={styles.imgNews}>
                   <img src="https://via.placeholder.com/190x130" alt="News" />
                 </div>
@@ -101,7 +101,7 @@ export class Main extends React.Component {
               </a>
             </article>
             <article>
-              <a href="#">
+              <a href="/#">
                 <div className={styles.imgNews}>
                   <img src="https://via.placeholder.com/190x130" alt="News" />
                 </div>
@@ -127,7 +127,7 @@ export class Main extends React.Component {
                   <img src="https://s.yimg.com/os/weather/1.0.1/dark_icon/64x64/partly_cloudy_day@2x.png" alt="" />
                 </div>
                 <div className={styles.weatherTemp}>
-                  <span className={styles.night}>+1°</span> <span class={styles.day}>+5°</span>
+                  <span className={styles.night}>+1°</span> <span className={styles.day}>+5°</span>
                 </div>
               </div>
               <div className={styles.weatherItem}>
@@ -136,7 +136,7 @@ export class Main extends React.Component {
                   <img src="https://s.yimg.com/os/weather/1.0.1/dark_icon/64x64/cloudy_day_night@2x.png" alt="" />
                 </div>
                 <div className={styles.weatherTemp}>
-                  <span className={styles.night}>+2°</span> <span class={styles.day}>+8°</span>
+                  <span className={styles.night}>+2°</span> <span className={styles.day}>+8°</span>
                 </div>
               </div>
               <div className={styles.weatherItem}>
@@ -145,7 +145,7 @@ export class Main extends React.Component {
                   <img src="https://s.yimg.com/os/weather/1.0.1/dark_icon/64x64/scattered_showers_day_night@2x.png" alt="" />
                 </div>
                 <div className={styles.weatherTemp}>
-                  <span className={styles.night}>+11°</span> <span class={styles.day}>+15°</span>
+                  <span className={styles.night}>+11°</span> <span className={styles.day}>+15°</span>
                 </div>
               </div>
               <div className={styles.weatherItem}>
@@ -154,7 +154,7 @@ export class Main extends React.Component {
                   <img src="https://s.yimg.com/os/weather/1.0.1/dark_icon/64x64/clear_day@2x.png" alt="" />
                 </div>
                 <div className={styles.weatherTemp}>
-                  <span className={styles.night}>+1°</span> <span class={styles.day}>+5°</span>
+                  <span className={styles.night}>+1°</span> <span className={styles.day}>+5°</span>
                 </div>
               </div>
             </div>

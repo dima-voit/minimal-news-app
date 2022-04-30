@@ -8,7 +8,7 @@ export class Header extends React.Component {
     return (
       <header className={styles.header}>
         <div className={styles.logo}>
-          <a href="#">
+          <a href="/#">
             <img src={Logo} alt="NewsBox" />
           </a>
         </div>
