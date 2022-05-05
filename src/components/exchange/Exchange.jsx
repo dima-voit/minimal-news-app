@@ -1,7 +1,24 @@
 import React from "react";
+import axios from "axios";
 import styles from "./exchange.module.scss";
 
 export class Exchange extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    axios
+      .get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
 
   render() {
     return (
