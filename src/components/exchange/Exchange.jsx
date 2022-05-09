@@ -6,7 +6,12 @@ export class Exchange extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      r030: "",
+      txt: "",
+      rate: "",
+      cc: "",
+    };
   }
 
   componentDidMount() {
@@ -14,6 +19,7 @@ export class Exchange extends React.Component {
       .get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
       .then((response) => {
         console.log(response.data);
+        this.setState(response.data);
       })
       .catch((error) => {
         console.error(error);
