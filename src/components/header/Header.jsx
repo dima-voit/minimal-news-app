@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "../../logo.svg";
 import { CurrentDate } from "../date/Date";
+import { Navbar } from "../navbar/Navbar";
+
 import styles from "./header.module.scss";
 
 export class Header extends React.Component {
@@ -13,6 +15,7 @@ export class Header extends React.Component {
             <img src={Logo} alt="NewsBox" />
           </a>
         </div>
+        <Navbar />
         <CurrentDate />
       </header>
     )
