@@ -1,18 +1,19 @@
 import React from "react";
-import styles from "./pageone.module.scss";
+import { Layout } from "../../components/layout/Layout";
 
 export class Pageone extends React.Component {
 
   render () {
     return (
-      <div className={styles.page}>
-        <h1 className={styles.pageTitle}>This day in history</h1>
+      <Layout>
+        <h1>This day in history</h1>
         <form>
           <input/>
           <input/>
+          <textarea></textarea>
           <button>Add date</button>
         </form>
-      </div>
+      </Layout>
     )
   }
 }

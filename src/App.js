@@ -1,15 +1,16 @@
-import { Header } from './components/header/Header';
-import { Footer } from './components/footer/Footer';
-import { Main } from './components/main/Main';
+import { Router } from './components/Router';
 
 import './App.css';
+import { Layout } from './components/layout/Layout';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Footer />
+      <Layout >
+
+      
+      <Router />
+      </Layout>
     </div>
   );
 }
