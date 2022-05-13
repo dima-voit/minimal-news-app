@@ -9,6 +9,7 @@ export class Layout extends React.Component {
     return (
       <>
         <Header />
+        {this.props.children}
         <Outlet />
         <Footer />
       </>
