@@ -9,15 +9,16 @@ section {
 }
 
 .weatherItem {
+  display: flex;
   text-align: center;
 }
 
-.weatherDay {
-  font-size: 12px;
+.tempNow {
+  font-size: 32px;
 }
 
 .weatherIcon img {
-  width: 40px;
+  width: 100px;
 }
 
 .weatherTemp {
