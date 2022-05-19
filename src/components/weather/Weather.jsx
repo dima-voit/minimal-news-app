@@ -71,7 +71,7 @@ export class Weather extends React.Component {
             <div className={styles.weatherTemp}>
               <div className={styles.tempNow}>{this.state.temp}°</div>
               <div className={styles.tempFeel}>Feels like {this.state.feelsLike}°</div>
-              <div>Max:{this.state.tempMax}° Min:{this.state.tempMin}°</div>
+              <div>Max:{this.state.tempMax}°&nbsp; Min:{this.state.tempMin}°</div>
             </div>
           </div>
         </div>

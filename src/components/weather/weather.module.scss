@@ -3,18 +3,24 @@ section {
   background-color: #fff;
 }
 
-.weather {
-  display: flex;
-  gap: 20px;
+sup {
+  font-size: 10px;
+  margin-left: 5px;
 }
 
 .weatherItem {
   display: flex;
+  justify-content: space-around;
   text-align: center;
 }
 
 .tempNow {
   font-size: 32px;
+}
+
+.tempFeel {
+  margin-bottom: 8px;
+  font-size: 9px;
 }
 
 .weatherIcon img {
@@ -24,8 +30,4 @@ section {
 .weatherTemp {
   font-size: 12px;
   font-weight: 700;
-
-  .day {
-    color: #828643;
-  }
 }
