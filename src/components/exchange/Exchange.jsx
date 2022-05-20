@@ -9,8 +9,7 @@ export class Exchange extends React.Component {
     exchangeRows: [],
   };
 
-  constructor() {
-    super();
+  componentDidMount() {
     axios
       .get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
       .then((response) => {
