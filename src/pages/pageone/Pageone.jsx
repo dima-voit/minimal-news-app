@@ -1,18 +1,11 @@
 import React from "react";
+import { Biography } from "../../components/biography/Biography";
 
-export class Pageone extends React.Component {
 
-  render () {
-    return (
-      <>
-        <h1>This day in history</h1>
-        <form>
-          <input/>
-          <input/>
-          <textarea></textarea>
-          <button>Add date</button>
-        </form>
-      </>
-    )
-  }
+
+export const Pageone = () => {
+
+  return (
+    <Biography />
+  )
 }
