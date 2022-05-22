@@ -2,6 +2,8 @@ import React from "react";
 import { persons } from "../../shared/personData";
 import { Person } from "./Person";
 
+import styles from "./biography.module.scss";
+
 export class Biography extends React.Component {
 
   personRow = persons.map((person) => {
@@ -18,7 +20,7 @@ export class Biography extends React.Component {
 
   render() {
     return(
-      <table>
+      <table className={styles.biographyTable}>
         <tbody>
           <tr>
             <th>Year</th>
