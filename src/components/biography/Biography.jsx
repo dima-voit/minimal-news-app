@@ -24,10 +24,10 @@ const Biography = () => {
     e.preventDefault();
     console.log('click');
     const newPerson = {
-      personBirth,
-      personName,
-      personLastName,
-      personDescription
+      personBirth: "",
+      personName: "",
+      personLastName: "",
+      personDescription: ""
 
     }
     setPersons([...persons, newPerson])
@@ -40,7 +40,7 @@ const Biography = () => {
         <MyInput 
           value={person.personBirth}
           onChange={e => setPerson({...person, personBirth: e.target.value})}
-          type="number" 
+          type="text" 
           placeholder="Year of birth" 
         />
         <MyInput 
