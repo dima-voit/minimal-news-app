@@ -1,11 +1,14 @@
 import React from "react";
-import { Biography } from "../../components/biography/Biography";
+import Biography from "../../components/biography/Biography";
 
 
 
-export const Pageone = () => {
+
+const Pageone = () => {
 
   return (
     <Biography />
   )
 }
+
+export default Pageone;

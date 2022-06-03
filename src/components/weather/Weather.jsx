@@ -38,7 +38,12 @@ export class Weather extends React.Component {
 
   getWeather = (latitude, longitude) => {
     axios
-      .get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=7140505f5aa2181188526b6867fba29c`)
+      .get(`https://api.openweathermap.org/data/2.5/weather`, {params: {
+        lat: latitude,
+        lon: longitude,
+        units: 'metric',
+        appid: '7140505f5aa2181188526b6867fba29c'
+      }})
       .then((response) => {
         console.log(response.data);
         this.setState({

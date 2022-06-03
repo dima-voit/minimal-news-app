@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { Layout } from "./layout/Layout";
 
 import { Homepage } from "../pages/homepage/Homepage";
-import { Pageone } from "../pages/pageone/Pageone";
+import Pageone from "../pages/pageone/Pageone";
 import { Notfound } from "./../pages/notfound/Notfound";
 
 export class Router extends React.Component {
