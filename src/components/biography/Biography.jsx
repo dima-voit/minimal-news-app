@@ -22,15 +22,7 @@ const Biography = () => {
   
   const addNewPerson = (e) => {
     e.preventDefault();
-    console.log('click');
-    const newPerson = {
-      personBirth: "",
-      personName: "",
-      personLastName: "",
-      personDescription: ""
-
-    }
-    setPersons([...persons, newPerson])
+    setPersons([...persons, {...person}])
     setPerson({personBirth: "", personName: "", personLastName: "", personDescription: "",})
   };
 
@@ -61,7 +53,7 @@ const Biography = () => {
           type="text"
           placeholder="Description"
         />
-        <MyButton onClick={addNewPerson} />
+        <MyButton onClick={addNewPerson}>Add</MyButton>
       </form>
       <PersonTable persons={persons} />
     </div>

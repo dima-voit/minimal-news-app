@@ -1,9 +1,9 @@
 import React from "react";
 
-const MyButton = () => {
+const MyButton = ({children, ...props}) => {
   return (
-    <button>
-      Add
+    <button {...props}>
+      {children}
     </button>
   );
 };
