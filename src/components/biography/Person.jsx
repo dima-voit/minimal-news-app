@@ -1,4 +1,5 @@
 import React from "react";
+import MyButton from "../UI/button/MyButton";
 
 import styles from "./biography.module.scss";
 
@@ -9,9 +10,9 @@ const Person = (props) => {
       <td>{props.person.firstName} {props.person.lastName}</td>
       <td>{props.person.description}</td>
       <td>
-        <button className={styles.deleteBtn} onClick={() => alert('Worked!')}>
+        <MyButton className={styles.deleteBtn} onClick={() => props.remove(props.person)}>
           X
-        </button>
+        </MyButton>
       </td>
     </tr>
   )

@@ -2,7 +2,7 @@ import React from "react";
 
 import Person from "./Person";
 
-const PersonTable = ({persons}) => {
+const PersonTable = ({persons, remove}) => {
 
   return (
     <table>
@@ -13,7 +13,7 @@ const PersonTable = ({persons}) => {
           <th>Description</th>
         </tr>
         {persons.map(person =>
-          <Person key={person.id} person={person}/>
+          <Person remove={remove} key={person.id} person={person}/>
         )}
       </tbody>
     </table>
