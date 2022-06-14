@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
+
 import MyButton from "../UI/button/MyButton";
 import MyInput from "../UI/input/MyInput";
 
@@ -13,16 +15,11 @@ const Biography = () => {
     {id: 3, yearOfBirth: 1005, firstName: 'Jimmy', lastName: 'Moor', description: 'Lorem ipsum 3'},
   ]);
 
-  const [person, setPerson] = useState({
-    personBirth: "",
-    personName: "",
-    personLastName: "",
-    personDescription: "",
-  });
+  const [person, setPerson] = useState("");
   
   const addNewPerson = (e) => {
     e.preventDefault();
-    setPersons([...persons, {...person}])
+    setPersons([...persons, {...person, id: uuidv4()}])
     setPerson({personBirth: "", personName: "", personLastName: "", personDescription: "",})
   };
 
