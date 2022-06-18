@@ -13,7 +13,10 @@ const PersonTable = ({persons, remove}) => {
           <th>Description</th>
         </tr>
         {persons.map(person =>
-          <Person remove={remove} key={person.id} person={person}/>
+          <Person 
+            remove={remove} 
+            key={person.id} 
+            person={person}/>
         )}
       </tbody>
     </table>
